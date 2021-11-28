@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="text-red-200  text-7xl">
+  这里是测试小程序首页
+  <button class="text-red-300">111</button>
+  <checkbox class="bg-red"></checkbox>
+</view>

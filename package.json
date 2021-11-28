@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "less": "^4.1.2",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
+    "tailwindcss-miniprogram-preset": "^2.0.0"
+  },
+  "scripts": {
+    "build": "tailwind -o ./tw/tw.wxss",
+    "node": "node ./test.js"
+  }
+}
