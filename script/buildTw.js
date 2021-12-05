@@ -8,7 +8,7 @@ switch (mode) {
   case "development": {
     const filename = "tw.wxss";
     execSync(
-      `npx tailwindcss -i srcStyles/common.css -p  -o styles/${filename}  & node script/replace -f styles/${filename} & node script/writeAppWxss -f ${filename}`,
+      `npx tailwindcss -i srcStyles/common.css -p  -o styles/${filename}  && node script/replace -f styles/${filename}`,
       {
         stdio: "inherit",
       }
@@ -20,7 +20,7 @@ switch (mode) {
   case "prod": {
     const filename = "tw.min.wxss";
     execSync(
-      `NODE_ENV=production npx tailwindcss -i sr  cStyles/common.css -p -o styles/${filename} --minify && node script/replace -f styles/${filename} & node script/writeAppWxss -f ${filename}`,
+      `NODE_ENV=production npx tailwindcss -i srcStyles/common.css -p -o styles/${filename} --minify && node script/replace -f styles/${filename} `,
       {
         stdio: "inherit",
       }
