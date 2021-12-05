@@ -1,1 +1,1 @@
-@import 'styles/tw.min.wxss';
+@import './styles/tw.wxss';

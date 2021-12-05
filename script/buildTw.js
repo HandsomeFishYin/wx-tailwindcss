@@ -5,7 +5,7 @@ const mode = getParam("m") || getParam("mode");
 
 const execScript = (filename, env) => {
   return execSync(
-    `NODE_ENV=${env} npx tailwindcss -i srcStyles/common.css -p  -o styles/${filename}  && node script/replace -f styles/${filename}`,
+    `NODE_ENV=${env} npx tailwindcss -i srcStyles/common.css -p  -o ./styles/${filename}  && node script/replace -f ./styles/${filename}`,
     {
       stdio: "inherit",
     }
