@@ -16,7 +16,9 @@ const formatSpacingValues = spacingValues.reduce((prev, value) => {
 }, {});
 
 module.exports = {
-  purge: [],
+  purge: {
+    content: ["./pages/**/*.wxml"],
+  },
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
