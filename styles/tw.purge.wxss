@@ -1,0 +1,50 @@
+.btn {
+  border-radius: 8rpx;
+  --tw-bg-opacity: 1;
+  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn1{
+  border-radius: 8rpx;
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.table {
+  display: table;
+}
+
+.text-3xl {
+  font-size: 60rpx;
+  line-height: 72rpx;
+}
+
+.text-red-900 {
+  --tw-text-opacity: 1;
+  color: rgba(127, 29, 29, var(--tw-text-opacity));
+}
+
+view,text,canvas,swiper, ::before, ::after {
+  --tw-shadow: 0 0 #0000;
+}
+
+view,text,canvas,swiper, ::before, ::after {
+  --tw-ring-inset: var(--tw-empty,/view,text,canvas,swiper!view,text,canvas,swiper/ /view,text,canvas,swiper!view,text,canvas,swiper/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(147, 197, 253, 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+}
