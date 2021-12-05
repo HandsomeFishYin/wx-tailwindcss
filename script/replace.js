@@ -9,6 +9,8 @@ const twFile = fs.readFileSync(filename, "utf-8");
 
 fs.writeFile(filename, twFile.replace(/\*/g, replaceTag), (err, data) => {
   if (!err) {
-    console.log("文件生成成功");
+    console.log(`${filename}生成成功`);
+  }else{
+    console.log('error = ',err)
   }
 });

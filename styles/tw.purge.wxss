@@ -1,3 +1,7 @@
+view,text,canvas,swiper, ::before, ::after {
+  border-color: currentColor;
+}
+
 .btn {
   border-radius: 8rpx;
   --tw-bg-opacity: 1;

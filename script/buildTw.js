@@ -6,8 +6,9 @@ const mode = getParam("m") || getParam("mode");
 switch (mode) {
   case "dev":
   case "development": {
+    const filename = "tw.wxss";
     execSync(
-      "npx tailwindcss -i srcStyles/common.css -p  -o styles/tw.wxss  && node script/replace -f styles/tw.wxss",
+      `npx tailwindcss -i srcStyles/common.css -p  -o styles/${filename}  & node script/replace -f styles/${filename} & node script/writeAppWxss -f ${filename}`,
       {
         stdio: "inherit",
       }
@@ -17,8 +18,9 @@ switch (mode) {
   case "qa":
   case "pre":
   case "prod": {
+    const filename = "tw.min.wxss";
     execSync(
-      "NODE_ENV=production npx tailwindcss -i srcStyles/common.css -p -o styles/tw.min.wxss --minify && node script/replace -f styles/tw.min.wxss",
+      `NODE_ENV=production npx tailwindcss -i sr  cStyles/common.css -p -o styles/${filename} --minify && node script/replace -f styles/${filename} & node script/writeAppWxss -f ${filename}`,
       {
         stdio: "inherit",
       }
@@ -26,8 +28,9 @@ switch (mode) {
     break;
   }
   default: {
+    const filename = "tw.purge.wxss";
     execSync(
-      "NODE_ENV=production npx tailwindcss -i srcStyles/common.css --postcss  -o styles/tw.purge.wxss && node script/replace -f styles/tw.purge.wxss",
+      `NODE_ENV=production npx tailwindcss -i srcStyles/common.css --postcss  -o styles/${filename} && node script/replace -f styles/${filename}`,
       {
         stdio: "inherit",
       }
