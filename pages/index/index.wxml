@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="text-red-900  text-3xl">
+<view class="text-red-900 text-3xl dark0focus0bg-gray-400">
   这里是测试小程序首页
 <!--  <button class="btn">111</button>-->
 <!--  <button class="btn1">111</button>-->

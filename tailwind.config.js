@@ -16,11 +16,12 @@ const formatSpacingValues = spacingValues.reduce((prev, value) => {
 }, {});
 
 module.exports = {
+  separator: "0",
   purge: {
     content: ["./pages/**/*.wxml"],
   },
   presets: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media",
   theme: {
     colors: {
       transparent: "transparent",
@@ -304,7 +305,11 @@ module.exports = {
       90: "90",
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      backgroundColor: ["hover", "dark", "focus"],
+    },
+  },
   plugins: [],
   corePlugins: {
     preflight: false,

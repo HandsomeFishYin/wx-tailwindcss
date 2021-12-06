@@ -1,1 +1,1 @@
-@import './styles/tw.wxss';
+@import './styles/tw.purge.wxss';

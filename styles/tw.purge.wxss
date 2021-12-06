@@ -30,6 +30,13 @@ view,text,canvas,swiper, ::before, ::after {
   display: table;
 }
 
+@media (prefers-color-scheme: dark) {
+  .dark0focus0bg-gray-400:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  }
+}
+
 .text-3xl {
   font-size: 60rpx;
   line-height: 72rpx;
