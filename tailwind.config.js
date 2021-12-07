@@ -1,4 +1,28 @@
-const colors = require("tailwindcss/colors");
+// const colors = require("tailwindcss/colors");
+
+const colors = {
+  black: '#000',
+  white: '#fff',
+  blue: {
+    50: 'var(--main-blue50-color)',
+    100: 'var(--main-blue100-color)',
+    200: 'var(--main-blue200-color)',
+    300: 'var(--main-blue300-color)',
+    400: 'var(--main-blue400-color)',
+    500: 'var(--main-blue500-color)',
+    600: 'var(--main-blue600-color)',
+    700: 'var(--main-blue700-color)',
+    800: 'var(--main-blue800-color)',
+    900: 'var(--main-blue900-color)',
+  },
+  M: {
+    1: 'var(--M1-color)',
+    2: 'var(--M2-color)',
+    3: 'var(--M3-color)',
+    4: 'var(--M4-color)',
+    5: 'var(--M5-color)',
+  }
+}
 
 const spacingValues = [
   0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24,
@@ -26,17 +50,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-      brownaaaa: colors.black,
-      black: colors.black,
-      white: colors.white,
-      gray: colors.coolGray,
-      red: colors.red,
-      yellow: colors.amber,
-      green: colors.emerald,
-      blue: colors.blue,
-      indigo: colors.indigo,
-      purple: colors.violet,
-      pink: colors.pink,
+      ...colors
     },
     spacing: formatSpacingValues,
     backgroundOpacity: (theme) => theme("opacity"),
@@ -307,7 +321,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundColor: ["hover", "dark", "focus"],
+      backgroundColor: ["hover", "dark", "focus", "first"],
     },
   },
   plugins: [],

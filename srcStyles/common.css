@@ -2,12 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .btn {
-        @apply px-4 py-2 bg-blue-600 text-white rounded;
-    }
+page {
+  --main-blue50-color: #eff6ff;
+  --main-blue100-color: #dbeafe;
+  --main-blue200-color: #bfdbfe;
+  --main-blue300-color: #93c5fd;
+  --main-blue400-color: #60a5fa;
+  --main-blue500-color: #3b82f6;
+  --main-blue600-color: #2563eb;
+  --main-blue700-color: #1d4ed8;
+  --main-blue800-color: #1e40af;
+  --main-blue900-color: #1e3a8a;
 
-    .btn1{
-        @apply px-4 py-2 bg-red-300 text-white rounded;
-    }
+  --M1-color: #2ab2ff;
+  --M2-color: #ff4444;
+  --M3-color: #2dda86;
+  --M4-color: #1989fa;
+  --M5-color: #ff592a;
+}
+
+@media (prefers-color-scheme: dark) {
+  page {
+    --main-blue50-color: #fef2f2;
+    --main-blue100-color: #fee2e2;
+    --main-blue200-color: #fecaca;
+    --main-blue300-color: #fca5a5;
+    --main-blue400-color: #f87171;
+    --main-blue500-color: #ef4444;
+    --main-blue600-color: #dc2626;
+    --main-blue700-color: #b91c1c;
+    --main-blue800-color: #991b1b;
+    --main-blue900-color: #7f1d1d;
+
+    --M1-color: #ff592a;
+    --M2-color: #ff4444;
+    --M3-color: #2dda86;
+    --M4-color: #1989fa;
+    --M5-color: #ffa000;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 bg-blue-600 text-white rounded;
+  }
+
+  .btn1 {
+    @apply px-4 py-2 bg-blue-600 text-white rounded;
+  }
 }

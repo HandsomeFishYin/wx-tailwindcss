@@ -1,8 +1,22 @@
 <!--index.wxml-->
-<view class="text-red-900 text-3xl dark0focus0bg-gray-400">
-  这里是测试小程序首页
-<!--  <button class="btn">111</button>-->
-<!--  <button class="btn1">111</button>-->
-<!--  <checkbox class="bg-red"></checkbox>-->
-</view>
 
+<view class="bg-white dark0bg-black h-screen transform ">
+  <view class="text-blue-50 first0bg-blue-300">测试变量50</view>
+  <view class="text-blue-100">测试变量100</view>
+  <view class="text-blue-200">测试变量200</view>
+  <view class="text-blue-300">测试变量300</view>
+  <view class="text-blue-400">测试变量400</view>
+  <view class="text-blue-500">测试变量500</view>
+  <view class="text-blue-600">测试变量600</view>
+  <view class="text-blue-700">测试变量700</view>
+  <view class="text-blue-800">测试变量800</view>
+  <view class="text-blue-900 mb-3">测试变量900</view>
+
+
+  <view class="text-M-1">测试变量M1</view>
+  <view class="text-M-2">测试变量M2</view>
+  <view class="text-M-3">测试变量M3</view>
+  <view class="text-M-4">测试变量M4</view>
+  <view class="text-M-5">测试变量M5</view>
+
+</view>
